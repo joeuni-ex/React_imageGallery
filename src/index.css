@@ -53,6 +53,53 @@ body {
   height: 24px;
   flex-shrink: 0;
 }
+
+/* 검색창 */
+
+.title {
+  text-align: center;
+  font-size: 50px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: 80px; /* 100% */
+  letter-spacing: 1px;
+  text-transform: capitalize;
+  color: #5a96e3;
+}
+
+.search-form {
+  margin-top: 32px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 20px;
+}
+.search-input {
+  padding-left: 20px;
+  width: 400px;
+  height: 40px;
+  padding-right: 0px;
+  flex-shrink: 0;
+  border: 1px solid #cbd5e1;
+  background: #f8fafc;
+}
+
+.btn {
+  color: white;
+  background: #5a96e3;
+  border: 1px solid #cbd5e1;
+  height: 40px;
+  width: 70px;
+  text-align: center;
+  font-family: Arial;
+  font-size: 13.333px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+  letter-spacing: 1px;
+  text-transform: capitalize;
+}
+
 /* 이미지 갤러리 스타일링 */
 .gallery {
   display: flex;
