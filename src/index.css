@@ -31,11 +31,28 @@ body {
   font-family: "Poppins", sans-serif;
 }
 
-h1 {
-  text-align: center;
-  margin-top: 50px;
+/* 테마 토글  */
+.toggle-container {
+  max-width: 1100px;
+  margin: 0 auto;
+  display: flex;
+  justify-content: end;
 }
 
+.dark-toggle {
+  margin-top: 20px;
+  background-color: transparent;
+  border-color: transparent;
+  width: 5rem;
+  height: 2rem;
+  place-items: center;
+  cursor: pointer;
+}
+.toggle-icon {
+  width: 24px;
+  height: 24px;
+  flex-shrink: 0;
+}
 /* 이미지 갤러리 스타일링 */
 .gallery {
   display: flex;
