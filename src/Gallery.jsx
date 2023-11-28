@@ -10,7 +10,9 @@ const url = `https://api.unsplash.com/search/photos?client_id=${
 const Gallery = () => {
   //데이터 받아오기
   const { searchTerm } = useGlobalContext(); //전역 저장된 검색어
-  const { data, error, isPending } = useFetch(`${url}&query=${searchTerm}`);
+  const { data, error, isPending } = useFetch(
+    `${url}&query=${searchTerm}&per_page=20&page=20`
+  );
   console.log(data);
 
   //로딩중
