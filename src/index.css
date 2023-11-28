@@ -137,3 +137,51 @@ body {
 .gallery .images .img:hover img {
   transform: scale(1.1);
 }
+
+.lightbox {
+  background-color: rgba(0, 0, 0, 0.3);
+  width: 100vw;
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+}
+
+.wrapper {
+  background-color: white;
+  padding: 0 30px 0 30px;
+  width: 900px;
+  height: 670px;
+  border-radius: 10px;
+  overflow: hidden;
+  box-shadow: 5px 10px 10px 1px rgba(0, 0, 0, 0.3);
+}
+
+.wrapper > header {
+  height: 80px;
+  background-color: white;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.details {
+  margin-left: 20px;
+  font-size: 1.2rem;
+  font-weight: 600;
+}
+.buttons {
+  padding: 5px;
+  margin-right: 20px;
+  font-size: 1.3rem;
+}
+
+.preview-img > .img > img {
+  width: 840px;
+  height: 560px;
+  object-fit: cover;
+}

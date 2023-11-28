@@ -1,10 +1,14 @@
 const PopupBox = ({ item, setItem }) => {
-  //console.log(item);
+  console.log(item);
   const url = item?.urls?.regular;
 
-  setItem("");
+  const handleClick = () => {
+    const modal = document.getElementById("popup");
+    modal.style.display = "none";
+    setItem(null);
+  };
   return (
-    <div className="lightbox show">
+    <div className="lightbox show " id="popup">
       <div className="wrapper">
         <header>
           <div className="details">
@@ -12,7 +16,7 @@ const PopupBox = ({ item, setItem }) => {
             <span>Image Preview</span>
           </div>
           <div className="buttons">
-            <i className="close-icon uil uil-times"></i>
+            <i className="close-icon uil uil-times" onClick={handleClick}></i>
           </div>
         </header>
         <div className="preview-img">

@@ -32,8 +32,7 @@ const Gallery = ({ setItem }) => {
   }
 
   const handleClick = (e, item) => {
-    const searchValue = item;
-    console.log(searchValue);
+    setItem(item);
   };
   return (
     <section className="gallery">
