@@ -9,6 +9,7 @@ const SearchForm = () => {
     if (searchValue !== null && searchValue.length > 1) {
       setSearchTerm(searchValue); //검색어를 공통으로 저장한다.
     }
+    e.target.elements.search.value = ""; // 입력 후 공백으로
   };
   return (
     <section>
