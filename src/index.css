@@ -1,6 +1,27 @@
 /* 폰트는 항상 제일 위에 Import Google font - Poppins */
 @import url("https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600&display=swap");
 
+:root {
+  /* dark mode setup */
+  --dark-mode-bg-color: #333;
+  --dark-mode-text-color: #f0f0f0;
+  --backgroundColor: #f8fafc;
+  --textColor: #0f172a;
+  --darkModeTransition: color 0.3s ease-in-out,
+    background-color 0.3s ease-in-out;
+}
+
+.dark-theme {
+  background: var(--dark-mode-bg-color);
+  color: var(--dark-mode-text-color);
+}
+
+body {
+  background: var(--backgroundColor);
+  color: var(--textColor);
+  transition: var(--darkModeTransition);
+}
+
 /* 초기화 작업  */
 /* margin, padding 0 , box-sizing -- border size */
 * {
