@@ -1,5 +1,7 @@
+import { useGlobalContext } from "./context";
+
 const PopupBox = ({ item, setItem }) => {
-  console.log(item);
+  const { isDarkTheme } = useGlobalContext();
   const url = item?.urls?.regular;
 
   const handleClick = () => {
@@ -9,8 +11,8 @@ const PopupBox = ({ item, setItem }) => {
   };
   return (
     <div className="lightbox show " id="popup">
-      <div className="wrapper">
-        <header>
+      <div className={`wrapper ${isDarkTheme}`}>
+        <header className={`header ${isDarkTheme}`}>
           <div className="details">
             <i className="uil uil-camera"></i>
             <span>Image Preview</span>

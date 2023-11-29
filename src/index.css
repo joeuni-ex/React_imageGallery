@@ -22,6 +22,15 @@ body {
   transition: var(--darkModeTransition);
 }
 
+.wrapper.true {
+  background: var(--dark-mode-bg-color);
+  color: var(--dark-mode-text-color);
+}
+.wrapper > header.true {
+  background: var(--dark-mode-bg-color);
+  color: var(--dark-mode-text-color);
+}
+
 /* 초기화 작업  */
 /* margin, padding 0 , box-sizing -- border size */
 * {
@@ -150,6 +159,7 @@ body {
   left: 0;
   right: 0;
   bottom: 0;
+  padding: 5%;
 }
 
 .wrapper {
@@ -181,7 +191,7 @@ body {
 }
 
 .preview-img > .img > img {
-  width: 840px;
+  width: 100%;
   height: 560px;
   object-fit: cover;
 }
