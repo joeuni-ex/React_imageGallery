@@ -19,7 +19,7 @@ const SearchForm = () => {
           type="text"
           className="search-input"
           name="search"
-          placeholder="cat"
+          placeholder="검색어를 입력하세요."
         />
         <button type="submit" className="btn">
           search
